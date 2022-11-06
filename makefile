@@ -21,4 +21,4 @@ debug:
 debugvs:
 	g++ *.cpp -g -o build/dexercise
 debugtest: 
-	g++ -fsanitize=address --std=c++17 test/tests.cpp student.cpp -g -o build/dexercise
+	g++ -fsanitize=address --std=c++17 test/tests.cpp ejercicio1.cpp ejercicio3.cpp ejercicio7.cpp ejercicio8.cpp -g -o build/dexercise
