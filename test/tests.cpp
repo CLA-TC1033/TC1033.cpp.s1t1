@@ -4,7 +4,7 @@
 #include <string>
 
 #define CATCH_CONFIG_MAIN // defines main() automatically
-#include "catch.hpp"
+#include "catch_amalgamated.hpp"
 
 #include "../ejercicio1.hpp"
 #include "../ejercicio3.hpp"
