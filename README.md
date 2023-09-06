@@ -4,6 +4,45 @@
 
 Resolver los ejercicios de programación (1,3,7 y 8) sobre Estructuras de Control y Funciones.
 
+## Ejemplo de ejecución
+
+```
+Dame un numero:10
+Dame otro numero:15
+¿Que deseas hacer (S)umar (R)estar (M)ultiplicar?S
+10+15=25
+Suma de pares entre 0 y 100:2550
+Serie armonica para a=1, d=3, n=25:
+Termino 1:1
+Termino 2:4
+Termino 3:7
+Termino 4:10
+Termino 5:13
+Termino 6:16
+Termino 7:19
+Termino 8:22
+Termino 9:25
+Termino 10:28
+Termino 11:31
+Termino 12:34
+Termino 13:37
+Termino 14:40
+Termino 15:43
+Termino 16:46
+Termino 17:49
+Termino 18:52
+Termino 19:55
+Termino 20:58
+Termino 21:61
+Termino 22:64
+Termino 23:67
+Termino 24:70
+Termino 25:73
+Valor total de la serie:925
+Media geometrica del 1 al 3:1.81712
+Media armonica del 1 al 3:1.63636
+```
+
 ## Objetivo
 
 - Busca que el código pase correctamente todas las pruebas
