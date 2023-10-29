@@ -6,7 +6,8 @@
 				"ms-vscode.cpptools",
 				"analytic-signal.preview-pdf",
 				"GitHub.copilot",
-				"bierner.markdown-mermaid"
+				"bierner.markdown-mermaid",
+				"mhutchie.git-graph"
 			]
 		}
 	}
