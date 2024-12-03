@@ -54,6 +54,8 @@ Media armonica del 1 al 3:1.63636
 
 ## Instrucciones
 
+- Deberás modificar el archivo `exercise.cpp`  y agregar la programación adicional que sea necesaria.
+
 Explicación de los otros archivos:
 
 - Archivo `test/tests.cpp` tiene las pruebas de esta actividad (NO LO CAMBIES!)
@@ -68,17 +70,50 @@ Explicación de los otros archivos:
 
 - Comando para construir y ejecutar la aplicación: `make run` 
     * Si el ejecutable ya está construido, sólo teclea : `./build/exercise`
-
+      
 - Comando para depurar: `make debug`
     * Para conocer los comandos de depuración consulta:
      https://u.osu.edu/cstutorials/2018/09/28/how-to-debug-c-program-using-gdb-in-6-simple-steps/
-     
+
 - Comando para depurar con `vsCode`: `make debugvs` 
-    * Utilizar el depurador de la IDE.
+    * Abre el programa principal.
+    * Utiliza el depurador de la IDE.
       
 - Comando para depurar pruebas con `vsCode`: `make debugtest` 
-    * Utilizar el depurador de la IDE.   
+    * Abre el programa principal.
+    * Utilizar el depurador de la IDE.
+- Comando para limpieza de binarios `make clean`
+    * Úselo cuando desee eliminar cualquier binario que se haya generado en la carpeta `build`.
+    * Úselo cuando detecte que algún binario no está actualizado o bien no se hubiere construido conrrectamente.
 
+## Instrucciones para construir y ejecutar la aplicación y pruebas usando CMake
+
+1. Entrar al directorio de construcción:
+   ```sh
+   cd build
+   ```
+
+2. Configurar el proyecto con CMake:
+   ```sh
+   cmake -DTEST_EXECUTABLE=ON ..
+   cmake -DMAIN_EXECUTABLE=ON ..
+   ```
+
+3. Construir la aplicación:
+   ```sh
+   cmake --build .
+   ```
+
+4. Ejecutar la aplicación:
+   ```sh
+   ./exercise
+   cd ..
+   ```
+5. Ejecutar las pruebas:
+   ```sh
+   ./appTests
+   cd ..
+   ```
 ## Notas
 
 - El código será evaluado solamente si compila.
