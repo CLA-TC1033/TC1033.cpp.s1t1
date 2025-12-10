@@ -62,6 +62,35 @@ Explicación de los otros archivos:
 - Archivo `makefile` tienes los comandos para ejecutar la actividad (NO LO CAMBIES!)
 - Archivo  `./build/appTests` se generará después de compilar (para **pruebas locales**, solo ejecútalo)
 
+## Revisión de estándares de codificación con IA
+
+1. Abre GitHub Copilot (`Ctrl+Alt+I`).
+2. Selecciona el modo `Ask` y el modelo `Auto`.
+3. Coloca como contexto el/los `<archivo.cpp/hpp>`(s) a verificar la aplicación de estándares de programación. 
+4. Usa cualquiera de los siguientes *prompts*:
+```
+/rev-std
+```
+o bien:
+```
+Revisa la aplicación de cada uno de los estándares de codificación. Si se cumple el estándar indícalo con la frase: "**CUMPLE**". Sí no se cumple algún estandar índicalo con la frase: "**¡NO CUMPLE!**" y muestra para ese estandar un ejemplo de código que sí lo cumple y que sea diferente al revisado con el fin de ilustrar como se puede cumplir. No ofrezcas sugerencias para mi código.
+```
+4. Verifica los cambios sugeridos y realiza aquéllos que consideres convenientes.
+5. Verifica que pasa todas las pruebas.
+6. Empuja tu programación a GitHub.
+
+## Aplicación de estándares de codificación con IA
+
+1. Abre GitHub Copilot (`Ctrl+Alt+I`).
+2. Coloca como contexto el/los `<archivo.cpp/hpp>`(s) a aplicar los estándares de programación. 
+4. Usa el siguiente *prompt*:
+```
+/app-std
+```
+4. Verifica los cambios sugeridos y edita/confirma aquéllos que consideres convenientes.
+5. Verifica que pasa todas las pruebas y que el programa principal se ejecuta correctamente.
+6. Empuja tu programación a GitHub.
+
 ## Comandos para pruebas locales, ejecución y depuración
 
 - Comando para construir y ejecutar pruebas: `make` o `make test` o `make ctest`
@@ -115,35 +144,6 @@ Explicación de los otros archivos:
    ./appTests
    cd ..
    ```
-## Revisión de estándares de codificación con IA
-
-1. Abre GitHub Copilot (`Ctrl+Alt+I`).
-2. Selecciona el modo `Ask` y el modelo `Auto`.
-3. Coloca como contexto el/los `<archivo.cpp/hpp>`(s) a verificar la aplicación de estándares de programación. 
-4. Usa cualquiera de los siguientes *prompts*:
-```
-/rev-std
-```
-o bien:
-```
-Revisa la aplicación de cada uno de los estándares de codificación. Si se cumple el estándar indícalo con la frase: "**CUMPLE**". Sí no se cumple algún estandar índicalo con la frase: "**¡NO CUMPLE!**" y muestra para ese estandar un ejemplo de código que sí lo cumple y que sea diferente al revisado con el fin de ilustrar como se puede cumplir. No ofrezcas sugerencias para mi código.
-```
-4. Verifica los cambios sugeridos y realiza aquéllos que consideres convenientes.
-5. Verifica que pasa todas las pruebas.
-6. Empuja tu programación a GitHub.
-
-## Aplicación de estándares de codificación con IA
-
-1. Abre GitHub Copilot (`Ctrl+Alt+I`).
-2. Coloca como contexto el/los `<archivo.cpp/hpp>`(s) a aplicar los estándares de programación. 
-4. Usa el siguiente *prompt*:
-```
-/app-std
-```
-4. Verifica los cambios sugeridos y edita/confirma aquéllos que consideres convenientes.
-5. Verifica que pasa todas las pruebas y que el programa principal se ejecuta correctamente.
-6. Empuja tu programación a GitHub.
-
 ## Notas
 
 - El código será evaluado solamente si compila.
